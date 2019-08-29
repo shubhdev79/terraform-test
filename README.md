@@ -1,4 +1,4 @@
-# terraform-test
+# Creating the Infra through Terraform
 Building VPC peering network and accessing the web servers
 
 Goal: To access Web or DB Instances residing in Private subnets and in Different VPC.
@@ -16,7 +16,7 @@ Testing done, above infrastructure is working fine.
 
 ---------------------------------------------------------------------------------------
 
-What's Next ?
+# What's Next ?
 
 -> Create a Website.
 -> Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate, you should be having Domain)
@@ -26,7 +26,7 @@ What's Next ?
 
 ---------------------------------------------------------------------------------------
 
-Requirements:
+# Requirements:
 
 :Resource Requirements:
 
