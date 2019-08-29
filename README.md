@@ -1,4 +1,4 @@
-# Creating the Infra using Terraform
+# Building the Infra using Terraform
 
 Building VPC peering network and accessing the web servers.
 
