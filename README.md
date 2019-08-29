@@ -37,7 +37,7 @@ Testing done, above infrastructure is working fine.
 # What's Next ?
 
 * Create a Website.
-* Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate, you should be having Domain)
+* Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate because of CNAME Error, you should be having Domain)
 * Register it through Route53.
 * Monitor the Application through CloudWatch or Datadog etc.
 * Place the website code in GitHub, use Jenkins to deploy the application and to make changes regularly.
