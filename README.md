@@ -1,13 +1,14 @@
 # Creating the Infra through Terraform
+
 Building VPC peering network and accessing the web servers
 
 Goal: To access Web or DB Instances residing in Private subnets and in Different VPC.
 
--> Accessing the Instance through JumpBox which is in Public-VPC(Open to world)
--> By Peering the VPCS, define & implement the security group policies.
--> Created the ALB.
--> ALB is in Private VPC and will be handling the load of private instances.
--> Currently ALB is serving HTTP Traffic.
+1. Accessing the Instance through JumpBox which is in Public-VPC(Open to world)
+2. By Peering the VPCS, define & implement the security group policies.
+3. Created the ALB.
+4. ALB is in Private VPC and will be handling the load of private instances.
+5. Currently ALB is serving HTTP Traffic.
 
 Testing done, above infrastructure is working fine.
 
