@@ -1,6 +1,6 @@
 # Creating the Infra using Terraform
 
-Building VPC peering network and accessing the web servers
+Building VPC peering network and accessing the web servers.
 
 Goal: To access Web or DB Instances residing in Private subnets and in Different VPC.
 
@@ -20,19 +20,17 @@ Testing done, above infrastructure is working fine.
 
 :Resource Requirements:
 
-2 VPCs - Management & Production
-5 Subnets - 4 in Production & 1 in Management
-3 Security Groups - 1 PROD, 1 MGMNT & 1 ALB
+* 2 VPCs - Management & Production
+* 5 Subnets - 4 in Production & 1 in Management
+* 3 Security Groups - 1 PROD, 1 MGMNT & 1 ALB
 
-3 Route Tables - 1 Public , 1 Private in Production & 1 in Management
-2 Internet Gateways - 1 Prod-IGW, 1 Mgmt-IGW
-1 NAT Gateway - For Private Ec2 Instance(Required to Accessthe Internet Feautures to upgradet the packages)
+* 3 Route Tables - 1 Public , 1 Private in Production & 1 in Management
+* 2 Internet Gateways - 1 Prod-IGW, 1 Mgmt-IGW
+* 1 NAT Gateway - For Private Ec2 Instance(Required to Accessthe Internet Feautures to upgradet the packages)
 
-1 VPC Peering Connection -
-
-1 ALB - To distribute the load of our Web servers.
-
-2 EC2 Instances - 1 In Mgmnt i.e your Bastion Host, 1 in Production i.e it will be WEB-DB Server
+* 1 VPC Peering Connection -
+* 1 ALB - To distribute the load of our Web servers.
+* 2 EC2 Instances - 1 In Mgmnt i.e your Bastion Host, 1 in Production i.e it will be WEB-DB Server
 
 ---------------------------------------------------------------------------------------
 
