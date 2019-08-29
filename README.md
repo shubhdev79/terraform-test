@@ -1,4 +1,4 @@
-# Creating the Infra through Terraform
+# Creating the Infra using Terraform
 
 Building VPC peering network and accessing the web servers
 
@@ -12,18 +12,18 @@ Goal: To access Web or DB Instances residing in Private subnets and in Different
 
 Testing done, above infrastructure is working fine.
 
---> ALB is loading, IIS Installation done in the Private EC2 instance(Through Powershell Script).
---> NAT is attached, just in case you want to update any package or softwares in your EC2 instance (But Heavily Chargeable, Make sure you delete it after the project implementation)
+* ALB is loading, IIS Installation done in the Private EC2 instance(Through Powershell Script).
+* NAT is attached, just in case you want to update any package or softwares in your EC2 instance (But Heavily Chargeable, Make sure you delete it after the project implementation)
 
 ---------------------------------------------------------------------------------------
 
 # What's Next ?
 
--> Create a Website.
--> Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate, you should be having Domain)
--> Register it through Route53.
--> Monitor the Application through CloudWatch or Datadog etc.
--> Place the website code in GitHub, use Jenkins to deploy the application and to make changes regularly.
+1. Create a Website.
+2. Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate, you should be having Domain)
+3. Register it through Route53.
+4. Monitor the Application through CloudWatch or Datadog etc.
+5. Place the website code in GitHub, use Jenkins to deploy the application and to make changes regularly.
 
 ---------------------------------------------------------------------------------------
 
