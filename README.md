@@ -4,11 +4,11 @@ Building VPC peering network and accessing the web servers
 
 Goal: To access Web or DB Instances residing in Private subnets and in Different VPC.
 
-1. Accessing the Instance through JumpBox which is in Public-VPC(Open to world)
-2. By Peering the VPCS, define & implement the security group policies.
-3. Created the ALB.
-4. ALB is in Private VPC and will be handling the load of private instances.
-5. Currently ALB is serving HTTP Traffic.
+* Accessing the Instance through JumpBox which is in Public-VPC(Open to world)
+* By Peering the VPCS, define & implement the security group policies.
+* ALB is created.
+* ALB is in Private VPC and will be handling the load of private instances.
+* Currently ALB is serving HTTP Traffic.
 
 Testing done, above infrastructure is working fine.
 
@@ -16,17 +16,6 @@ Testing done, above infrastructure is working fine.
 * NAT is attached, just in case you want to update any package or softwares in your EC2 instance (But Heavily Chargeable, Make sure you delete it after the project implementation)
 
 ---------------------------------------------------------------------------------------
-
-# What's Next ?
-
-1. Create a Website.
-2. Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate, you should be having Domain)
-3. Register it through Route53.
-4. Monitor the Application through CloudWatch or Datadog etc.
-5. Place the website code in GitHub, use Jenkins to deploy the application and to make changes regularly.
-
----------------------------------------------------------------------------------------
-
 # Requirements:
 
 :Resource Requirements:
@@ -44,3 +33,13 @@ Testing done, above infrastructure is working fine.
 1 ALB - To distribute the load of our Web servers.
 
 2 EC2 Instances - 1 In Mgmnt i.e your Bastion Host, 1 in Production i.e it will be WEB-DB Server
+
+---------------------------------------------------------------------------------------
+
+# What's Next ?
+
+* Create a Website.
+* Use Route53 to get the domain (ALB DNS wont get any HTTPS certificate, you should be having Domain)
+* Register it through Route53.
+* Monitor the Application through CloudWatch or Datadog etc.
+* Place the website code in GitHub, use Jenkins to deploy the application and to make changes regularly.
